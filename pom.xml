@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.example</groupId> <!-- Replace with your group ID -->
+    <artifactId>my-project</artifactId> <!-- Replace with your artifact ID -->
+    <version>1.0-SNAPSHOT</version> <!-- Version of your project -->
+    <packaging>jar</packaging> <!-- or 'war' if it's a web application -->
+
+    <name>My Project</name> <!-- Project name -->
+    <description>A brief description of your project</description>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source> <!-- Set your Java version -->
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <!-- Add your dependencies here -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.0.0</version> <!-- Specify the desired version -->
+        </dependency>
+        <!-- Add more dependencies as needed -->
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version> <!-- Plugin version -->
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                </configuration>
+            </plugin>
+            <!-- Add more plugins as needed -->
+        </plugins>
+    </build>
+
+</project>
