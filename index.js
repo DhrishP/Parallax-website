@@ -7,7 +7,7 @@ const jobTitleContainers = document.querySelectorAll(".jobTitleContainer")
 const jobTitles = document.querySelectorAll(".jobTitle")
 const projectsTitle = document.querySelector(".projectsTitle")
 const phones = document.querySelectorAll(".phone")
-const laptop = document.querySelector(".laptop")
+const laptop = document.querySelector(".laptop")a
 
 for(let i = 0; i<365; i++){
 
